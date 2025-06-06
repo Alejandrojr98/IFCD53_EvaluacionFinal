@@ -1,3 +1,11 @@
+/**
+ * @autor Alejandro
+ * @date
+ * @version
+ *
+ *
+ */
+
 package com.cursoceat.ifcd53_evaluacionfinal.controller;
 
 import com.cursoceat.ifcd53_evaluacionfinal.modell.Empleado;
@@ -86,7 +94,7 @@ public class EmpleadoController {
     @GetMapping("/eliminar/{id}")
     public String eliminarEmpleado(@PathVariable("id") int idEmp) {
         empleadoRepository.deleteById(idEmp);
-        return "redirect:/lista_empleados";
+        return "redirect:/";
     }
 
     /**
